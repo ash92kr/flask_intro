@@ -1,0 +1,10 @@
+{% extends "base.html" %} 
+
+{% block body_block %}
+
+<h1>행운! 오늘의 로또 번호는 {{lucky}}입니다!!</h1>
+{% for num in lucky %}  <!--파이썬의 반복문을 HTML에 적용하기-->
+    <h1>{{num}}</h1>  <!--원소 출력-->
+{% endfor %}   <!--시작과 끝 명확하게-->
+
+{% endblock %}
